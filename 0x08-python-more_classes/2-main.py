@@ -1,4 +1,3 @@
-guillaume@ubuntu:~/0x08$ cat 2-main.py
 #!/usr/bin/python3
 Rectangle = __import__('2-rectangle').Rectangle
 
