@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-""" Define  an inherited list class Mylist. """
+""" Define  an inherited list class MyList. """
 
-class Mylist(list):
+class MyList(list):
     """ Sorted list function """
 
     def print_sorted(self):
