@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-''' define a function that reads files '''
+''' defines a function that reads text files '''
 
 def read_file(filename=""):
-    ''' Prints contents of my_file_0.txt'''
+    """ Prints contents of a UTF8 text file to stdout """
 
     with open('my_file_0.txt', 'r') as f:
         print(f.read(), end="")
