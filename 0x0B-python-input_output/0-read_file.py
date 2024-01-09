@@ -5,5 +5,4 @@ def read_file(filename=""):
     ''' Prints contents of my_file_0.txt'''
 
     with open('my_file_0.txt', 'r') as f:
-        rf = f.read()
-        print(rf, end="")
+        print(f.read(), end="")
