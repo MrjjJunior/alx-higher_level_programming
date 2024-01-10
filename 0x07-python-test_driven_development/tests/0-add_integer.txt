@@ -1,0 +1,38 @@
+"test": doctest
+
+"0-add_integer": True
+
+"function": add_integer
+
+"relative_path": C:\Users\27796\alx-projects\alx-higher_level_programming\0x07-python-test_driven_development/0-add_integer
+
+"cases": [
+
+Trying:
+    add_integer(1, 2)
+Expecting:
+    3
+ok
+Trying:
+    add_integer(100, -2)
+Expecting:
+    98
+ok
+Trying:
+    add_integer(2)
+Expecting:
+    100
+ok
+Trying:
+    add_integer(100.3, -2)
+Expecting:
+    98
+ok
+1 items had no tests:
+    0-add_integer
+1 items passed all tests:
+   4 tests in 0-add_integer.add_integer
+4 tests in 2 items.
+4 passed and 0 failed.
+Test passed.
+]
