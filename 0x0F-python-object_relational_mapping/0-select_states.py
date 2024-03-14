@@ -5,7 +5,7 @@ import MySQLdb
 if __name__ == "__main__":
     #connection param
     username = sys.argv[1]
-    passwoord = sys.argv[2]
+    password = sys.argv[2]
     database  = sys.argv[3]
 
     #connect to MySQL server
@@ -21,7 +21,7 @@ if __name__ == "__main__":
     cursor = db.cursor()
 
     #excute SQL
-    cursor.excute("SELECT * FROM states ORDER BY id ASC")
+    cursor.execute("SELECT * FROM states ORDER BY id ASC")
 
     #get and display results
     results = cursor.fetchall()
