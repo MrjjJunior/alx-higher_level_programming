@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-''' lists states name start with N  '''
+''' displays all values in the states table of hbtn_0e_0_usa where name matches the argument '''
 import sys
 import MySQLdb
 
@@ -20,9 +20,9 @@ if __name__ == "__main__":
 
     cursor = db.cursor()
 
-    sql_query = "SELECT * FROM states WHERE name LIKE %s ORDER BY id ASC"
+    sql_query = "SELECT * FROM states WHERE name LIKE '{}'"
 
-    cursor.execute(sql_query, (state_searched,3-my_safe_filter_states.py))
+    cursor.execute(sql_query.format(state_searched))
 
     results = cursor.fetchall()
     for row in results:
