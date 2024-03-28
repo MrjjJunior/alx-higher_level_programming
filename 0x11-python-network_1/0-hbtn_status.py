@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+''' Script that fetches a URL '''
 
 from urllib.request import urlopen
 
@@ -11,4 +12,4 @@ print("Body response:")
 print("    - type:", type(body))
 print("    -content", body)
 print("    - utf8 content:", utf8)
-#print(body[:15])
+
