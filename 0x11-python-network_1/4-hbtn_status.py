@@ -5,7 +5,7 @@ import requests
 
 if __name__ == "__main__":
     url = "https://alx-intranet.hbtn.io/status"
-    response = request.get(url)
+    response = requests.get(url)
 
     body = response.text
 
