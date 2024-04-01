@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """ Finds a peak in a list of unsorted integers
 """
-'''
+
 
 def find_peak(list_of_integers):
     """
@@ -30,4 +30,4 @@ def find_peak(list_of_integers):
         else:
             return list_of_integers[mid]
 
-'''
+
