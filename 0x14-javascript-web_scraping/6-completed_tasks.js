@@ -21,5 +21,6 @@ request(apiURL, function (error, response, body) {
     console.log(Object.keys(completed).length > 2 ? output : completed)
   } else {
     console.error(error)
+    return
   }
 })
