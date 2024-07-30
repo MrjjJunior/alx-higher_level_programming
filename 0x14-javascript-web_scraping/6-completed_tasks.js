@@ -2,9 +2,24 @@
 
 const request = require('request')
 
-const api_url = process.argv[2];
+const apiURL = process.argv[2]
 
-request(api_url, function (error, response, body)) {
-	if (response.statusCode === 200) {
-		const todos = JSON.parse
-
+request(apiURL, function (error, response, body) {
+  if (response.statusCode === 200) {
+    const todos = JSON.parse(body)
+    const completed = {}
+    todos.forEach((todo) => {
+      if (todo.completed) {
+        if (completed[todo.userId] === undefined) {
+          completed[todo.userId] = 1
+        } else {
+          completed[todo.userId]++
+        }
+      }
+    })
+    const output = `{${Object.entries(completed).map(([key, value]) => ` '${key}': ${value}`).join(',\n ')} }`
+    console.log(Object.keys(completed).length > 2 ? output : completed)
+  } else {
+    console.error(error)
+  }
+})
