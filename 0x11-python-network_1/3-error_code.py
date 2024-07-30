@@ -1,11 +1,14 @@
 #!/usr/bin/python3
-''' script takes URL, sends a request to the URL and displays the body of the response '''
+'''
+script takes URL, sends a request to the URL
+and displays the body of the response
+'''
 import urllib.request
 import urllib.error
 import sys
 
 if __name__ == "__main__":
-    
+
     url = sys.argv[1]
 
     try:
@@ -15,4 +18,3 @@ if __name__ == "__main__":
 
     except urllib.error.HTTPError as error:
         print("Error code:", error.code)
-
